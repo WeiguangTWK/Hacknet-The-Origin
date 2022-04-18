@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\关卡">
+      <UniqueIdentifier>{e21593b4-c5d9-4aad-9613-f6e4c591a040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\计算机类型">
+      <UniqueIdentifier>{e64ee1cb-ceaa-4a45-ac5e-2f1deb32695a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\命令处理">
+      <UniqueIdentifier>{6a03d68c-1d5f-4748-945c-6b06a6a65fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\命令处理\基础命令">
+      <UniqueIdentifier>{dd3c15b3-66bc-470d-b5b9-37db1ff80316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\结构体/类定义">
+      <UniqueIdentifier>{0402efa7-f03b-413e-92f3-1bb59aa747a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\关卡\序章">
+      <UniqueIdentifier>{450bb9c8-d504-4afa-a4db-5c70dba03f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\关卡\序章\教程关">
+      <UniqueIdentifier>{f06e6ebe-5a71-429e-b460-77d045769193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\关卡\序章\教程关\level0">
+      <UniqueIdentifier>{d69043e0-bbc1-47fd-9ced-c1c1bb32ba6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\关卡\序章\教程关\level1">
+      <UniqueIdentifier>{1bbd4563-3b23-4da0-bf7f-beff499323dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\关卡\序章\教程关\level2">
+      <UniqueIdentifier>{d2f67c1b-6bc7-40e2-ba45-a508f26dbc4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="levelSele.cpp">
+      <Filter>源文件\关卡</Filter>
+    </ClCompile>
+    <ClCompile Include="level0.cpp">
+      <Filter>源文件\关卡\序章\教程关\level0</Filter>
+    </ClCompile>
+    <ClCompile Include="level1.cpp">
+      <Filter>源文件\关卡\序章\教程关\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="host.cpp">
+      <Filter>源文件\计算机类型</Filter>
+    </ClCompile>
+    <ClCompile Include="rwopt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdquery.cpp">
+      <Filter>源文件\命令处理</Filter>
+    </ClCompile>
+    <ClCompile Include="initplayercmd.cpp">
+      <Filter>源文件\命令处理</Filter>
+    </ClCompile>
+    <ClCompile Include="filegeneral.cpp">
+      <Filter>源文件\命令处理\基础命令</Filter>
+    </ClCompile>
+    <ClCompile Include="help.cpp">
+      <Filter>源文件\命令处理\基础命令</Filter>
+    </ClCompile>
+    <ClCompile Include="level2.cpp">
+      <Filter>源文件\关卡\序章\教程关\level2</Filter>
+    </ClCompile>
+    <ClCompile Include="power.cpp">
+      <Filter>源文件\命令处理\基础命令</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="存档全局变量区.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="levels.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="savedata.h">
+      <Filter>头文件\结构体/类定义</Filter>
+    </ClInclude>
+    <ClInclude Include="pcinfo.h">
+      <Filter>头文件\结构体/类定义</Filter>
+    </ClInclude>
+    <ClInclude Include="cmds.h">
+      <Filter>头文件\结构体/类定义</Filter>
+    </ClInclude>
+    <ClInclude Include="addcmd.cpp">
+      <Filter>源文件\命令处理</Filter>
+    </ClInclude>
+    <ClInclude Include="host.h">
+      <Filter>头文件\结构体/类定义</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
