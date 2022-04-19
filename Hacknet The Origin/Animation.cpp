@@ -23,7 +23,7 @@ void mainmenu()
         << "_  /    _  / / //  __/     / /_/ / _  /    _  /  _  /_/ / _  /  _  / / / \n"
         << "/_/     /_/ /_/ \\___/      \\____/  /_/     /_/   _\\__, /  /_/   /_/ /_/ \n"
         << "                                                 /____/";
-    cout << endl << endl << "黑客网络：起源  By 网安Q211 孙文好\n";
+    cout << endl << endl << "黑客网络：起源  By WeiguangTWK\n";
     cout << endl << "V-Mach虚拟机控制台程序 ver 1.0 \n\n" << "help:\n" << "键入“new”开始新游戏\n" << "键入“recover”以继续游戏\n\n";
     if (sav->name.length() != 0) cout << "已有用户：" << sav->name << "  " << "章节：" << sav->chapter << endl;
     printf("IP: %d.%d.%d.%d\n", sav->ip[0], sav->ip[1], sav->ip[2], sav->ip[3]);
