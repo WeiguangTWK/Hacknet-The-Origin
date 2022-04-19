@@ -37,6 +37,7 @@ void help();
 void ls();
 void cd(std::string para);
 void rm(std::string para);
+void hostconnect(std::string para);
 //³õÊ¼»¯ÃüÁî¼ÇÂ¼
 
 void initplayercmdlv1();

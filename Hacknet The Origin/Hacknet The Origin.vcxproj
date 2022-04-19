@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="networkgeneral.cpp" />
     <ClCompile Include="power.cpp" />
     <ClCompile Include="help.cpp" />
     <ClCompile Include="host.cpp" />

@@ -84,6 +84,9 @@
     <ClCompile Include="power.cpp">
       <Filter>源文件\命令处理\基础命令</Filter>
     </ClCompile>
+    <ClCompile Include="networkgeneral.cpp">
+      <Filter>源文件\命令处理\基础命令</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
