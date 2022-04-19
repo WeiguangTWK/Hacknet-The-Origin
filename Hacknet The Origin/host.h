@@ -13,7 +13,7 @@ public:
 	void(*connectedfunc)();
 	void(*hackedfunc)();
 	void(*attackedfunc)();
-	void(*disconnectfunc);
+	void(*disconnectfunc)();
 };
 
 
