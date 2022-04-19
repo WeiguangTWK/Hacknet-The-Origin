@@ -25,7 +25,6 @@ int main(int argc,char *argv[])
 {
     currpath = workpath;
     currpath += currcomp;
-    cout << currpath.generic_string() << endl << workpath.generic_string() << endl;
     string opt;
     load();
     mainmenu();

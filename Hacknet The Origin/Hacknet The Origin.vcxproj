@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="level3.cpp" />
     <ClCompile Include="networkgeneral.cpp" />
     <ClCompile Include="power.cpp" />
     <ClCompile Include="help.cpp" />

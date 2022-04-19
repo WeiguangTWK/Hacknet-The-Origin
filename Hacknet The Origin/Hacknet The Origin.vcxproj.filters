@@ -43,6 +43,9 @@
     <Filter Include="源文件\关卡\序章\教程关\level2">
       <UniqueIdentifier>{d2f67c1b-6bc7-40e2-ba45-a508f26dbc4e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\关卡\序章\教程关\level3">
+      <UniqueIdentifier>{65ae8802-8019-42d9-97b5-6307199a006f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -86,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="networkgeneral.cpp">
       <Filter>源文件\命令处理\基础命令</Filter>
+    </ClCompile>
+    <ClCompile Include="level3.cpp">
+      <Filter>源文件\关卡\序章\教程关\level3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
