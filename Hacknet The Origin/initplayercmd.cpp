@@ -15,6 +15,8 @@ void initplayercmdlv1()   //初始化玩家指令（第一关）
 	addcmd2("shutdown", c2);
 	c2 = reboot;
 	addcmd2("reboot", c2);
+	c2 = dc;
+	addcmd2("dc", c2);
 	c1 = cd;
 	addcmd1("cd", c1);
 	c1 = rm;

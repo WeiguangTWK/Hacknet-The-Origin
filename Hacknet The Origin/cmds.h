@@ -38,6 +38,7 @@ void ls();
 void cd(std::string para);
 void rm(std::string para);
 void hostconnect(std::string para);
+void dc();
 //³õÊ¼»¯ÃüÁî¼ÇÂ¼
 
 void initplayercmdlv1();

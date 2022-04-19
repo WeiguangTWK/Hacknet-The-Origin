@@ -13,4 +13,5 @@ struct savedata
 	unsigned char mac[6] = { 0 };
 	unsigned int level = 0;
 	unsigned int chapter = 0;
+	bool ishacknet = false;
 };
