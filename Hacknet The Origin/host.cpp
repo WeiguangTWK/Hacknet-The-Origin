@@ -1,14 +1,18 @@
 #include "host.h"
+#include"存档全局变量区.h"
 #include<iostream>
 #include<vector>
 
 
-host::host(unsigned char* p, unsigned char* m, bool w)
+host::host(std::string p, std::string m, bool w)
 {
-	for (size_t i = 0; i < 6; i++)
-	{
-		if (i < 4) ip[i] = p[i];
-		mac[i] = m[i];
-	}
+	ip = p;
+	mac = m;
+	icmpable = w;
+	pcinfo tmp;
+	tmp.ip = p;
+	tmp.ptr = this;
+	pcs.push_back(tmp);
 }
+
 

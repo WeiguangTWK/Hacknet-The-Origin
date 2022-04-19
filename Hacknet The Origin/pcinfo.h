@@ -1,8 +1,8 @@
 #pragma once
-
+#include<string>
 
 struct pcinfo
 {
-	unsigned char ip[4];
-	void* ptr;
+	std::string ip;
+	host* ptr;
 };
