@@ -30,7 +30,9 @@ void cd(string para)
     if (para == "..")
     {
         filesystem::path init=workpath;
+        init += COMPUTERMAMP;
         init += currcomp;
+        init += "\\\\";
         //cout << init.generic_string() << endl << currpath.generic_string() << endl;
         if (init == currpath)
         {
@@ -46,10 +48,12 @@ void cd(string para)
     
     filesystem::path bak = currpath;
     currpath = workpath;
+    currpath += COMPUTERMAMP;
     currpath += currcomp;
+    currpath += "\\";
     currpath += para;
     currpath += "\\";
-    //cout << currpath.generic_string() << endl;
+    cout << currpath.generic_string() << endl;
     if (!filesystem::exists(currpath))
     {
         cout << "目标路径不存在" << endl;

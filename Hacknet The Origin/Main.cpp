@@ -25,7 +25,9 @@ const std::filesystem::path workpath(std::filesystem::current_path());
 int main(int argc,char *argv[])
 {
     currpath = workpath;
+    currpath += COMPUTERMAMP;
     currpath += currcomp;
+    currpath += "\\";
     string opt;
     load();
     mainmenu();

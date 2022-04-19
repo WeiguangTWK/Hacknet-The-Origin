@@ -19,4 +19,6 @@ void initplayercmdlv1()   //初始化玩家指令（第一关）
 	addcmd1("cd", c1);
 	c1 = rm;
 	addcmd1("rm", c1);
+	c1 = hostconnect;
+	addcmd1("connect", c1);
 };

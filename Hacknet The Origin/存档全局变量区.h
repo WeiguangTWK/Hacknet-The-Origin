@@ -4,7 +4,7 @@
 #include<filesystem>
 #include<vector>
 
-constexpr auto LOCALHOST = "\\computermap\\127.0.0.1\\";
+constexpr auto LOCALHOST = "127.0.0.1";
 constexpr auto COMPUTERMAMP = "\\computermap\\";
 void clear();
 void save();
@@ -14,7 +14,7 @@ extern bool ifinited;
 extern savedata* sav;
 extern std::filesystem::path currpath;
 extern std::filesystem::path currcomp;
-host* currcomptr;
+extern host* currcomptr;
 const extern std::filesystem::path workpath;
 extern std::vector<pcinfo> pcs;
 extern std::vector<command1> cmd1s;
