@@ -1,5 +1,6 @@
 #pragma once
 #include"savedata.h"
+#include"host.h"
 #include<filesystem>
 #include<vector>
 
@@ -13,6 +14,7 @@ extern bool ifinited;
 extern savedata* sav;
 extern std::filesystem::path currpath;
 extern std::filesystem::path currcomp;
+host* currcomptr;
 const extern std::filesystem::path workpath;
 extern std::vector<pcinfo> pcs;
 extern std::vector<command1> cmd1s;

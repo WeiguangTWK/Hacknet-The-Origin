@@ -1,8 +1,9 @@
 #pragma once
-
+#include<string>
+#include"host.h"
 
 struct pcinfo
 {
-	unsigned char ip[4];
-	void* ptr;
+	std::string ip;
+	host* ptr;
 };

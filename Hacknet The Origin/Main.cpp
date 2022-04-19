@@ -20,6 +20,7 @@ std::vector<command1> cmd1s;
 std::vector<command2> cmd2s;
 std::filesystem::path currpath;
 std::filesystem::path currcomp(LOCALHOST);
+host* currcomptr = NULL;
 const std::filesystem::path workpath(std::filesystem::current_path());
 int main(int argc,char *argv[])
 {
