@@ -40,6 +40,13 @@ void rm(std::string para);
 void hostconnect(std::string para);
 void dc();
 void connauth();
+void scp(std::string para);
+void upload(std::string para);
 //初始化命令记录
 
 void initplayercmdlv1();
+
+//以下变量是给scp和upload命令用的
+extern bool jumprequire;
+extern void(*jumpfunc)();
+extern std::string jumpfilename;

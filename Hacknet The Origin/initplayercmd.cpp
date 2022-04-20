@@ -26,4 +26,8 @@ void initplayercmdlv1()   //初始化玩家指令（第一关）
 	addcmd1("rm", c1);
 	c1 = hostconnect;
 	addcmd1("connect", c1);
+	c1 = scp;
+	addcmd1("scp", c1);
+	c1 = upload;
+	addcmd1("upload", c1);
 };
