@@ -21,11 +21,26 @@ string getvirtualpath(filesystem::path pth)
 
 void ls()
 {
+    if (currcomp != "127.0.0.1")
+        if (currcomptr->ishacked !=true)
+        {
+            //cout <<"ls:" << currcomptr << endl;
+            cout << "hostname:" << currcomptr->hostname << endl;
+            cout << "非目标主机管理员，无权操作" << endl;
+            return;
+        }
     for (filesystem::path dir_it : filesystem::directory_iterator(currpath)) cout << getvirtualpath(dir_it)<<endl;
 }
 
 void cd(string para)
 {
+    if (currcomp != "127.0.0.1")
+        if (currcomptr->ishacked==false)
+        {
+            cout << "非目标主机管理员，无权操作" << endl;
+            return;
+        }
+    
     if (para == ".") return;
     if (para == "..")
     {
@@ -62,6 +77,13 @@ void rm(string para)
 {
     filesystem::path rmpath=currpath;
     
+    if(currcomp!="127.0.0.1")
+        if (currcomptr->ishacked==false)
+        {
+            cout << "非目标主机管理员，无权操作" << endl;
+            return;
+        }
+
     if (para == "*")
     {
         for (filesystem::path dir_it : filesystem::directory_iterator(currpath))

@@ -3,29 +3,35 @@
 #include<iostream>
 using namespace std;
 
-bool connauth(host* ptr);
+void dc();
 void hostconnect(string para)
 {
 	bool found = false;
 	pcinfo tarpc;
+	if (para == "127.0.0.1" || para == "localhost")
+	{
+		dc();
+		return;
+	}
 	for (auto host_it : pcs)
 	{
 		if (host_it.ip == para)
 		{
 			tarpc = host_it;
+			currcomptr = host_it.ptr;
 			found = true;
+			break;
 		}
 	}
 	if (found)
 	{
-		if (!connauth) return;
-		
 		currpath = workpath;
 		currpath += COMPUTERMAMP;
 		currpath += tarpc.ip;
 		currpath += "\\";
 		currcomp = tarpc.ip;
 		currcomptr = tarpc.ptr;
+		cout << "连接到" << currcomptr->hostname << endl;
 	}
 	else
 	{
@@ -43,27 +49,37 @@ void dc()
 	currcomptr = NULL;
 }
 
-bool connauth(host* ptr)
+void connauth()
 {
-	if (ptr->ishacked) return true;
+	if (currcomptr == NULL||currcomptr->ishacked)
+	{
+		cout << "您已是目标主机的管理员" << endl;
+		return;
+	}
 	else
 	{
 		string user, passwd;
-
-		cout << "login: " << endl;
+		cout << "login: ";
 		cin >> user;
-		cout << "password: " << endl;
+		cout << "password: ";
 		cin >> passwd;
-		if (!(ptr->usr == user))
+		if (!(currcomptr->usr == user))
 		{
 			cout << "无此用户！" << endl;
-			return false;
+			return;
 		}
-		else if (ptr->pwd == passwd) return true;
+		else if (currcomptr->pwd == passwd)
+		{
+			cout << "您已是目标主机的管理员" << endl;
+			currcomptr->ishacked = true;
+			getchar();
+			return;
+		}
 		else
 		{
 			cout << "密码错误！" << endl;
-			return false;
+			return;
 		}
 	}
 }
+

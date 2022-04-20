@@ -5,5 +5,5 @@
 struct pcinfo
 {
 	std::string ip;
-	host* ptr;
+	host* ptr=NULL;
 };

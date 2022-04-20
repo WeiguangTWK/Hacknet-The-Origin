@@ -13,6 +13,7 @@ host::host(std::string p, std::string m, bool w)
 	tmp.ip = p;
 	tmp.ptr = this;
 	pcs.push_back(tmp);
+	//std::cout << "this:" << this << std::endl << "ptr:" << tmp.ptr << std::endl;
 }
 
 
