@@ -20,9 +20,9 @@ void level2()
 		initplayercmdlv1();
 		sysinit();
 		ifinited = true;
-		getchar();
 	}
 	//mainconsole(false);
+	std::cin.ignore(1, '\n');
 	ptr("\n\n正在启动教程......\n\n", 10);
 	Sleep(1500);
 	ptr("在本教程将进行本系统基础操作的教学\n\n", 10);

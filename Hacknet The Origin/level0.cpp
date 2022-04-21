@@ -12,13 +12,12 @@ void level0_1();
 void level0()
 {
 	system("cls");
-	getchar();
 	ptr("创建一个新虚拟机前，某些设置需要您自行设定，别担心，我们会把别的事项处理妥当", 5);
 	Sleep(500);
 	while (true)
 	{
 		char inp;
-		//getchar();
+		std::cin.ignore(1, '\n');
 		ptr("\n键入新用户的用户名：", 5);
 		std::getline(std::cin, sav->name);
 		ptr("新用户名为：", 5);
