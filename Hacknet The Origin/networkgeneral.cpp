@@ -52,7 +52,7 @@ void hostconnect(string para)
 
 void dc()
 {
-	logging(" disconnected ");
+	if(currcomp!=LOCALHOST) logging(" disconnected ");
 	currpath = workpath;
 	currpath += COMPUTERMAMP;
 	currpath += LOCALHOST;
@@ -123,8 +123,8 @@ void scp(string para)
 	}
 	cout << "从远程主机下载" << para;
 	ptr("......", 500);
-	cout << "完成！" << endl;
-	cout << "SRC:" << src.generic_string() << endl << "DEST:" << dest.generic_string() << endl;
+	//cout << "完成！" << endl;
+	//cout << "SRC:" << src.generic_string() << endl << "DEST:" << dest.generic_string() << endl;
 	filesystem::copy_file(src, dest);
 	string loggs=" downloaded ";
 	loggs += para;
@@ -157,12 +157,12 @@ void logging(string content)
 	filesystem::path logp=workpath;
 	logp += COMPUTERMAMP;
 	logp += currcomp;
-	logp += "\\logs\\";
+	logp += "\\logs\\"; 
 	logp += chartostr(sav->ip, 4);
 	logp += content;
 	logp += ".log";
 	ofstream logfile;
-	cout << logp.generic_string() << endl;
+	//cout << logp.generic_string() << endl;
 	logfile.open(logp, ios::out | ios::app);
 	logfile << chartostr(sav->ip, 4) << content;
 

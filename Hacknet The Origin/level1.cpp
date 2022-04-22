@@ -26,8 +26,7 @@ void level1()
 
 void firstsetup()
 {
-	thread i(dhcp);
-	i.detach();
+	dhcp();
 	Sleep(500);
 	ptr("检测到配置缺失，正在执行配置......", 5);
 	ptr("设置网络\n", 5);

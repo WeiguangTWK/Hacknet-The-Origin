@@ -144,6 +144,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="level3.cpp" />
+    <ClCompile Include="level4.cpp" />
+    <ClCompile Include="level5.cpp" />
     <ClCompile Include="networkgeneral.cpp" />
     <ClCompile Include="power.cpp" />
     <ClCompile Include="help.cpp" />

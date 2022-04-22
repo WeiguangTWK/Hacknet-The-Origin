@@ -42,6 +42,10 @@ void dc();
 void connauth();
 void scp(std::string para);
 void upload(std::string para);
+
+//第五关专用
+void compile(std::string para);
+
 //初始化命令记录
 
 void initplayercmdlv1();

@@ -5,7 +5,7 @@
 #include<Windows.h>
 #include<mmsystem.h>
 #include<iostream>
-constexpr auto FRIEND = "Vapor";
+//constexpr auto FRIEND = "Vapor";
 using namespace std;
 
 void initcomplv3();
@@ -22,7 +22,7 @@ void level3()
 		std::cin.ignore(1, '\n');
 	}
 	initcomplv3();
-	mainconsole(false);
+	//mainconsole(false);
 	ircmassage(FRIEND, "接下来的操作涉及到我在教程里面没有提到的东西", 2000);
 	ircmassage(FRIEND, "按我说的做就好", 3000);
 	ircmassage(FRIEND, "现在需要连接到IP地址为\"31.121.158.159\"的主机", 3300);
@@ -32,8 +32,21 @@ void level3()
 	ircmassage(FRIEND, "用户名:naix，密码：3gy2ufdd3q9u", 3100);
 	ircmassage(FRIEND, "从这个主机的home文件夹下载一个名字带hacknet的文件", 2800);
 	ircmassage(FRIEND, "当你忘记一个命令怎么用时就输入help看看吧", 3000);
-	ircmassage(FRIEND, "加油，这是你在网安实践迈出第一步",800);
+	ircmassage(FRIEND, "加油，这是你在网安实践迈出第一步",1500);
+	ircmassage(FRIEND, "现在输入\"connect 31.121.158.159\"", 800);
 	mainconsole(true,"scp hacknet_VER0.8_BUILD_2011.cpp");
 	ircmassage(FRIEND, "看来你已经把文件搞到手了，很好!", 2500);
+	ircmassage(FRIEND, "你在目标主机的每一个操作都会留下日志", 2600);
+	ircmassage(FRIEND, "这些日志往往会导致自己行踪的暴露", 2500);
+	ircmassage(FRIEND, "现在前往目标主机的logs目录", 2800);
+	ircmassage(FRIEND, "使用\"rm *\"清除logs目录下的所有文件",800);
+	mainconsole(true, "rm *");
+	ircmassage(FRIEND, "现在使用\"dc\"命令断开主机", 800);
+	mainconsole(true, "dc");
+	ircmassage(FRIEND, "大功告成！待会使用make命令编译就好了", 3500);
+	PlaySound(NULL, NULL, SND_ASYNC | SND_LOOP);
 
+	//mainconsole(false);
+	sav->level = 4;
+	save();
 }

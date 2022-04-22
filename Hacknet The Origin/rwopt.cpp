@@ -51,7 +51,7 @@ void save()
 		file.write((char*)&it.ptr, size);
 	}*/
 	
-	file.close();
+	system("pause");
 }
 
 void load()

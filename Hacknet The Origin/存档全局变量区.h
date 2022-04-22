@@ -20,3 +20,4 @@ extern std::vector<pcinfo> pcs;
 extern std::vector<command1> cmd1s;
 extern std::vector<command2> cmd2s;
 
+constexpr auto FRIEND = "Vapor";

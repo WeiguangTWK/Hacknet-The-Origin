@@ -17,3 +17,10 @@ void help()
 	cout << "reboot 结束会话并重启计算机" << endl;
 }
 
+void lv5help()
+{
+	cout << "help 显示本帮助" << endl;
+	cout << "shutdown 结束会话并关闭关闭计算机" << endl;
+	cout << "gcc <file> 编译指定文件" << endl;
+}
+

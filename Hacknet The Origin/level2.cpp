@@ -5,7 +5,7 @@
 #include<Windows.h>
 #include<mmsystem.h>
 #include<iostream>
-constexpr auto FRIEND = "Vapor";
+//constexpr auto FRIEND = "Vapor";
 
 using namespace std;
 void mainconsole(bool jumprequired, string jumpcmd = "none");

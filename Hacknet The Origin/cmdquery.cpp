@@ -10,7 +10,7 @@ void mainconsole(bool jumprequired,string jumpcmd="none")
 	string cmd;
 	string parameter;
 	string path;
-	string workp;
+	string workp; 
 	//int begin;
 	while (true)
 	{

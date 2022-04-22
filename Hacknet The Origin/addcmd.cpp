@@ -11,7 +11,6 @@ typedef void (*f_ptr2)(std::string);
 	cmd1.name = name;
 	cmd1.ptr = (f_ptr2)ptr;
 	cmd1s.push_back(cmd1);
-	save();
 };
 
 /*inline*/ void addcmd2(std::string name, const void (*ptr)())
@@ -22,5 +21,4 @@ typedef void (*f_ptr2)(std::string);
 	//std::cout <<"创建的命令名："<< name << std::endl;
 	//std::cout << "创建的命令地址：" << ptr << std::endl;
 	cmd2s.push_back(cmd2);
-	save();
 };

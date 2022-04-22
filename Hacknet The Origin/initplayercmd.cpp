@@ -31,3 +31,16 @@ void initplayercmdlv1()   //初始化玩家指令（第一关）
 	c1 = upload;
 	addcmd1("upload", c1);
 };
+
+void initplayercmdlv5()   //初始化玩家指令 （第5关）
+{
+	void lv5help();
+	void (*c1)(std::string);
+	void(*c2)();
+	c1 = compile;
+	addcmd1("compile", c1);
+	c2 = shutdown;
+	addcmd2("shutdown", c2);
+	c2 = lv5help;
+	addcmd2("help", c2);
+}

@@ -34,18 +34,6 @@
     <Filter Include="源文件\关卡\序章\教程关">
       <UniqueIdentifier>{f06e6ebe-5a71-429e-b460-77d045769193}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\关卡\序章\教程关\level0">
-      <UniqueIdentifier>{d69043e0-bbc1-47fd-9ced-c1c1bb32ba6a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\关卡\序章\教程关\level1">
-      <UniqueIdentifier>{1bbd4563-3b23-4da0-bf7f-beff499323dd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\关卡\序章\教程关\level2">
-      <UniqueIdentifier>{d2f67c1b-6bc7-40e2-ba45-a508f26dbc4e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\关卡\序章\教程关\level3">
-      <UniqueIdentifier>{65ae8802-8019-42d9-97b5-6307199a006f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\初始化">
       <UniqueIdentifier>{024190ef-41bb-41e5-81c7-22960995e422}</UniqueIdentifier>
     </Filter>
@@ -59,12 +47,6 @@
     </ClCompile>
     <ClCompile Include="levelSele.cpp">
       <Filter>源文件\关卡</Filter>
-    </ClCompile>
-    <ClCompile Include="level0.cpp">
-      <Filter>源文件\关卡\序章\教程关\level0</Filter>
-    </ClCompile>
-    <ClCompile Include="level1.cpp">
-      <Filter>源文件\关卡\序章\教程关\level1</Filter>
     </ClCompile>
     <ClCompile Include="host.cpp">
       <Filter>源文件\计算机类型</Filter>
@@ -81,23 +63,35 @@
     <ClCompile Include="help.cpp">
       <Filter>源文件\命令处理\基础命令</Filter>
     </ClCompile>
-    <ClCompile Include="level2.cpp">
-      <Filter>源文件\关卡\序章\教程关\level2</Filter>
-    </ClCompile>
     <ClCompile Include="power.cpp">
       <Filter>源文件\命令处理\基础命令</Filter>
     </ClCompile>
     <ClCompile Include="networkgeneral.cpp">
       <Filter>源文件\命令处理\基础命令</Filter>
     </ClCompile>
-    <ClCompile Include="level3.cpp">
-      <Filter>源文件\关卡\序章\教程关\level3</Filter>
-    </ClCompile>
     <ClCompile Include="initplayercmd.cpp">
       <Filter>源文件\初始化</Filter>
     </ClCompile>
     <ClCompile Include="initcomp.cpp">
       <Filter>源文件\初始化</Filter>
+    </ClCompile>
+    <ClCompile Include="level0.cpp">
+      <Filter>源文件\关卡\序章\教程关</Filter>
+    </ClCompile>
+    <ClCompile Include="level1.cpp">
+      <Filter>源文件\关卡\序章\教程关</Filter>
+    </ClCompile>
+    <ClCompile Include="level2.cpp">
+      <Filter>源文件\关卡\序章\教程关</Filter>
+    </ClCompile>
+    <ClCompile Include="level3.cpp">
+      <Filter>源文件\关卡\序章\教程关</Filter>
+    </ClCompile>
+    <ClCompile Include="level4.cpp">
+      <Filter>源文件\关卡\序章\教程关</Filter>
+    </ClCompile>
+    <ClCompile Include="level5.cpp">
+      <Filter>源文件\关卡\序章\教程关</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

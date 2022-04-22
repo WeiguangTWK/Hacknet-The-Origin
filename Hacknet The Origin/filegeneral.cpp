@@ -26,7 +26,7 @@ void ls()
         {
             //cout <<"ls:" << currcomptr << endl;
             cout << "hostname:" << currcomptr->hostname << endl;
-            cout << "非目标主机管理员，无权操作" << endl;
+            cout << "\n非目标主机管理员，无权操作\n" << endl;
             return;
         }
     for (filesystem::path dir_it : filesystem::directory_iterator(currpath)) cout << getvirtualpath(dir_it)<<endl;
@@ -37,7 +37,7 @@ void cd(string para)
     if (currcomp != "127.0.0.1")
         if (currcomptr->ishacked==false)
         {
-            cout << "非目标主机管理员，无权操作" << endl;
+            cout << "\n非目标主机管理员，无权操作\n" << endl;
             return;
         }
     
@@ -52,7 +52,7 @@ void cd(string para)
         //cout << init.generic_string() << endl << currpath.generic_string() << endl;
         if (init == currpath)
         {
-            cout << "已处于目标主机根目录" << endl;
+            cout << "\n已处于目标主机根目录\n" << endl;
             return;
         }
         //cout<< currpath.parent_path()<<endl;
@@ -68,7 +68,7 @@ void cd(string para)
     //cout << currpath.generic_string() << endl;
     if (!filesystem::exists(currpath))
     {
-        cout << "目标路径不存在" << endl;
+        cout << "\n目标路径不存在\n" << endl;
         currpath = bak;
     }
 }
@@ -80,7 +80,7 @@ void rm(string para)
     if(currcomp!="127.0.0.1")
         if (currcomptr->ishacked==false)
         {
-            cout << "非目标主机管理员，无权操作" << endl;
+            cout << "\n非目标主机管理员，无权操作\n" << endl;
             return;
         }
 
@@ -102,7 +102,7 @@ void rm(string para)
     rmpath += para;
     if (!filesystem::exists(rmpath))
     {
-        cout << "目标文件不存在" << endl;
+        cout << "\n目标文件不存在\n" << endl;
         return;
     }
     if (!filesystem::is_directory(rmpath))
@@ -115,7 +115,25 @@ void rm(string para)
     }
     else
     {
-        cout << "删除的对象为目录！" << endl;
+        cout << "\n删除的对象为目录！\n" << endl;
         return;
     }
+}
+
+void compile(string para)
+{
+
+    filesystem::path pat=currpath;
+    currpath += para;
+    string comp = pat.generic_string();
+    if (filesystem::exists(currpath))
+    {
+        if (comp.find(".cpp") == string::npos)
+        {
+            cout << "文件非可编译文件" << endl;
+            return;
+        }
+
+    }
+    cout << "文件不存在" << endl;
 }
