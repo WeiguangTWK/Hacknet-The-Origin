@@ -13,5 +13,5 @@ struct savedata  //这个是存档数据
 	unsigned char mac[6] = { 0 };
 	unsigned int level = 0;
 	unsigned int chapter = 0;
-	bool ishacknet = false;
+	unsigned char ispip[4] = { 0 };
 };

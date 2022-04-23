@@ -19,7 +19,6 @@ void level5()
     mainconsole(true, "compile hacknet_VER0.8_BUILD_2011.zip");
     sav->terminaltype = "@HACKNET";
     mainconsole(true, "reboot");
-    system("pause");
     sav->level = 6;
     save();
 }

@@ -32,7 +32,7 @@ void initplayercmdlv1()   //初始化玩家指令（第一关）
 	addcmd1("upload", c1);
 };
 
-void initplayercmdlv5()   //初始化玩家指令 （第5关）
+void initplayercmdlv5()   //初始化玩家指令 （第5关专用）
 {
 	void lv5help();
 	void (*c1)(std::string);
@@ -51,4 +51,19 @@ void initplayercmdlv5()   //初始化玩家指令 （第5关）
 	addcmd2("shutdown", c2);
 	c2 = lv5help;
 	addcmd2("help", c2);
+	c2 = console;
+	addcmd2("console", c2);
+}
+
+void initplayercmdlv6()  //Hacknet出场！
+{
+	void (*c1)(std::string);
+	void(*c2)();
+	c2 = nmap;
+	addcmd2("probe", c2);
+	addcmd2("nmap", c2);
+	c2 = porthack;
+	addcmd2("porthack", c2);
+	c2 = hacknethelp;
+	addcmd2("hacknethelp", c2);
 }

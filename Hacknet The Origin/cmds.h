@@ -35,6 +35,12 @@ void dc();
 void connauth();
 void scp(std::string para);
 void upload(std::string para);
+void console();
+
+//骇入命令
+void hacknethelp();
+void porthack();
+void nmap();
 
 //第五关专用
 void compile(std::string para);
@@ -42,6 +48,7 @@ void compile(std::string para);
 //初始化命令记录
 
 void initplayercmdlv1();
+void initplayercmdlv6();
 
 //以下变量是给scp和upload命令用的，用来在下载或上传某文件时触发事件
 extern bool jumprequire;

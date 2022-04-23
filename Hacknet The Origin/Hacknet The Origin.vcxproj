@@ -146,6 +146,7 @@
     <ClCompile Include="level3.cpp" />
     <ClCompile Include="level4.cpp" />
     <ClCompile Include="level5.cpp" />
+    <ClCompile Include="level6.cpp" />
     <ClCompile Include="networkgeneral.cpp" />
     <ClCompile Include="OPAnimation.cpp" />
     <ClCompile Include="power.cpp" />
@@ -163,6 +164,7 @@
     <ClCompile Include="cmdquery.cpp" />
     <ClCompile Include="initcomp.cpp" />
     <ClCompile Include="Animation2.cpp" />
+    <ClCompile Include="hacknetbuildin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addcmd.cpp" />

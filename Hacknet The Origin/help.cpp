@@ -18,6 +18,7 @@ void help()
 	cout << "scp <filename> 从远程主机下载指定文件" << endl;
 	cout << "shutdown 结束会话并关闭关闭计算机" << endl;
 	cout << "reboot 结束会话并重启计算机" << endl;
+	cout << "console 启动当前连接主机特殊服务界面" << endl;
 }
 
 void lv5help()
@@ -31,3 +32,8 @@ void lv5help()
 	cout << "reboot 结束会话并重启计算机\n" << endl;
 }
 
+void hacknethelp()
+{
+	cout << "probe或nmap 对已连接主机进行漏洞分析" << endl;
+	cout << "porthack 对已连接主机运行porthack综合渗透工具" << endl;
+}

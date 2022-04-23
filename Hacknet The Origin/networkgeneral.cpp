@@ -45,6 +45,7 @@ void hostconnect(string para)
 		currcomptr = tarpc.ptr;
 		cout << endl << "连接到" << currcomptr->hostname << endl;
 		logging(" connected ");
+		if (currcomptr->hostutility != NULL) (*currcomptr->hostutility)();
 	}
 	else
 	{
@@ -151,6 +152,13 @@ void upload(string para)
 	string loggs = " uploaded ";
 	loggs += para;
 	logging(loggs);
+}
+
+void console()
+{
+	if (currcomptr == NULL) return;
+	if (currcomptr->hostutility != NULL) (*currcomptr->hostutility)();
+	else cout << "目标主机不提供其他服务！" << endl;
 }
 
 void logging(string content)
