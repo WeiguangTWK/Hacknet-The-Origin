@@ -5,7 +5,7 @@
 #include"cmds.h"
 #define SAVEFILE "data.sav"
 
-struct savedata
+struct savedata  //这个是存档数据
 {
 	std::string name;
 	std::string terminaltype = "@UNIX";

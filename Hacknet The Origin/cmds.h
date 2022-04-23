@@ -1,6 +1,10 @@
 #pragma once
+//这里是我存放命令的地方
+
 #include<vector>
 #include <string>
+
+//这几个命令是后面用来创建vector用的，主要用途是配合后面的命令行模拟
 
 struct command1
 {
@@ -14,17 +18,6 @@ struct command2
 	void (*ptr)();
 };
 
-struct dlcommand1    //dl=download 此处存放的是\bin\文件夹下的命令
-{
-	std::string name;
-	void (*ptr)(std::string);
-};
-
-struct dlcommand2
-{
-	std::string name;
-	void (*ptr)();
-};
 
 void addcmd1(std::string name, void (*ptr)(std::string));
 void addcmd2(std::string name, void (*ptr)());
@@ -50,7 +43,7 @@ void compile(std::string para);
 
 void initplayercmdlv1();
 
-//以下变量是给scp和upload命令用的
+//以下变量是给scp和upload命令用的，用来在下载或上传某文件时触发事件
 extern bool jumprequire;
 extern void(*jumpfunc)();
 extern std::string jumpfilename;

@@ -1,4 +1,6 @@
 #pragma once
+//这里是添加命令用的
+
 #include"cmds.h"
 #include"savedata.h"
 #include"存档全局变量区.h"

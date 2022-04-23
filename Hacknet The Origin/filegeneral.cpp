@@ -1,4 +1,5 @@
 #pragma once
+//文件处理命令
 
 #include "cmds.h"
 #include"存档全局变量区.h"
@@ -10,7 +11,7 @@
 
 using namespace std;
 
-string getvirtualpath(filesystem::path pth)
+string getvirtualpath(filesystem::path pth)  //用于对输出的路径进行修改以便于让玩家看见的是游戏世界的文件路径
 {
     string fstr = currpath.generic_string();
     string str = pth.generic_string();
@@ -19,7 +20,7 @@ string getvirtualpath(filesystem::path pth)
     return str;
 }
 
-void ls()
+void ls()    //输出当前目录下的所有文件
 {
     if (currcomp != "127.0.0.1")
         if (currcomptr->ishacked !=true)
@@ -29,10 +30,12 @@ void ls()
             cout << "\n非目标主机管理员，无权操作\n" << endl;
             return;
         }
+    cout << endl;
     for (filesystem::path dir_it : filesystem::directory_iterator(currpath)) cout << getvirtualpath(dir_it)<<endl;
+    cout << endl;
 }
 
-void cd(string para)
+void cd(string para)  //退出\打开目录
 {
     if (currcomp != "127.0.0.1")
         if (currcomptr->ishacked==false)
@@ -73,7 +76,7 @@ void cd(string para)
     }
 }
 
-void rm(string para)
+void rm(string para)  //删除指定文件
 {
     filesystem::path rmpath=currpath;
     
@@ -120,20 +123,20 @@ void rm(string para)
     }
 }
 
-void compile(string para)
+void compile(string para)     //编译（第五关剧情）
 {
 
     filesystem::path pat=currpath;
-    currpath += para;
+    pat += para;
     string comp = pat.generic_string();
     if (filesystem::exists(currpath))
     {
-        if (comp.find(".cpp") == string::npos)
+        if (comp.find("zip") == string::npos)
         {
-            cout << "文件非可编译文件" << endl;
+            cout << "\n文件非可编译文件\n" << endl;
             return;
         }
-
+        compileanim();
     }
-    cout << "文件不存在" << endl;
+    else cout << "文件不存在" << endl;
 }

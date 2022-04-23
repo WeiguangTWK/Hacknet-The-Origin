@@ -1,5 +1,8 @@
 #include<iostream>
+//帮助程序
 using namespace std;
+
+
 
 void help()
 {
@@ -19,8 +22,12 @@ void help()
 
 void lv5help()
 {
-	cout << "help 显示本帮助" << endl;
+	cout << "\nhelp 显示本帮助" << endl;
+	cout << "cd <path> 转到指定文件夹" << endl;
+	cout << "rm <flie> 删除指定文件" << endl;
+	cout << "ls 列出当前文件夹下内容" << endl;
+	cout << "compile <file> 编译指定文件" << endl;
 	cout << "shutdown 结束会话并关闭关闭计算机" << endl;
-	cout << "gcc <file> 编译指定文件" << endl;
+	cout << "reboot 结束会话并重启计算机\n" << endl;
 }
 

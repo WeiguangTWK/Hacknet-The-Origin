@@ -11,8 +11,6 @@ using namespace std;
 void mainconsole(bool jumprequired, string jumpcmd = "none");
 void level2()
 {
-	
-	//system("pause");
 	if (!ifinited)
 	{
 		system("cls");
@@ -35,7 +33,7 @@ void level2()
 	cout << endl<<endl;
 	ptr("现在尝试进入用户文件夹，需要使用\"cd\"命令，该命令的格式为：\n", 10);
 	cout << endl<<"\tcd <path>"<<endl;
-	ptr("比如 cd bin\n",10);
+	ptr("比如 cd home\n\n",10);
 	mainconsole(true,"cd home");
 	ptr("\n看看这个目录里有什么\n", 10);
 	mainconsole(true, "ls");

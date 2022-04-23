@@ -1,6 +1,9 @@
+//这里放的是游戏开闭相关的
+
 #include"Animation.h"
 #include"savedata.h"
 #include<iostream>
+#include"存档全局变量区.h"
 using namespace std;
 
 
@@ -21,5 +24,10 @@ void shutdown()
 void reboot()
 {
 	system("cls");
+	if (sav->terminaltype == "@failsafe")
+	{
+		bootseqerr();
+		return;
+	}
 	bootseq();
 }

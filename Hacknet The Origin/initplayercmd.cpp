@@ -39,6 +39,14 @@ void initplayercmdlv5()   //初始化玩家指令 （第5关）
 	void(*c2)();
 	c1 = compile;
 	addcmd1("compile", c1);
+	c1 = cd;
+	addcmd1("cd", c1);
+	c1 = rm;
+	addcmd1("rm", c1);
+	c2 = ls;
+	addcmd2("ls", c2);
+	c2 = reboot;
+	addcmd2("reboot", c2);
 	c2 = shutdown;
 	addcmd2("shutdown", c2);
 	c2 = lv5help;

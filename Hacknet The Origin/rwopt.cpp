@@ -1,3 +1,6 @@
+//这里用于游戏的存档、读档和清档
+
+
 #include"存档全局变量区.h"
 #include"cmds.h"
 #include<stdlib.h>
@@ -51,7 +54,6 @@ void save()
 		file.write((char*)&it.ptr, size);
 	}*/
 	
-	system("pause");
 }
 
 void load()
@@ -99,7 +101,7 @@ void load()
 	file.close();
 }
 
-void dhcp()
+void dhcp()    //模拟DHCP的IP分配
 {
 	
 	char iotoib(int);

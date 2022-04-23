@@ -37,12 +37,12 @@
     <Filter Include="源文件\初始化">
       <UniqueIdentifier>{024190ef-41bb-41e5-81c7-22960995e422}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\动画">
+      <UniqueIdentifier>{fcc1be2f-b365-4949-8e3c-fa9d83d01e2e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Animation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="levelSele.cpp">
@@ -92,6 +92,15 @@
     </ClCompile>
     <ClCompile Include="level5.cpp">
       <Filter>源文件\关卡\序章\教程关</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation1.cpp">
+      <Filter>源文件\动画</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2.cpp">
+      <Filter>源文件\动画</Filter>
+    </ClCompile>
+    <ClCompile Include="OPAnimation.cpp">
+      <Filter>源文件\动画</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

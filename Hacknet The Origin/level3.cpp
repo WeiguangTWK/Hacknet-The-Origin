@@ -34,7 +34,7 @@ void level3()
 	ircmassage(FRIEND, "当你忘记一个命令怎么用时就输入help看看吧", 3000);
 	ircmassage(FRIEND, "加油，这是你在网安实践迈出第一步",1500);
 	ircmassage(FRIEND, "现在输入\"connect 31.121.158.159\"", 800);
-	mainconsole(true,"scp hacknet_VER0.8_BUILD_2011.cpp");
+	mainconsole(true,"scp hacknet_VER0.8_BUILD_2011.zip");
 	ircmassage(FRIEND, "看来你已经把文件搞到手了，很好!", 2500);
 	ircmassage(FRIEND, "你在目标主机的每一个操作都会留下日志", 2600);
 	ircmassage(FRIEND, "这些日志往往会导致自己行踪的暴露", 2500);

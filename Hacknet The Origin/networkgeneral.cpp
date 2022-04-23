@@ -1,3 +1,5 @@
+//这里存放的是网络相关的命令
+
 #include"cmds.h"
 #include"存档全局变量区.h"
 #include"Animation.h"
@@ -41,12 +43,12 @@ void hostconnect(string para)
 		currpath += "\\";
 		currcomp = tarpc.ip;
 		currcomptr = tarpc.ptr;
-		cout << "连接到" << currcomptr->hostname << endl;
+		cout << endl << "连接到" << currcomptr->hostname << endl;
 		logging(" connected ");
 	}
 	else
 	{
-		cout << "目标主机不存在或主机离线" << endl;
+		cout << "\n目标主机不存在或主机离线\n" << endl;
 	}
 }
 
@@ -57,7 +59,7 @@ void dc()
 	currpath += COMPUTERMAMP;
 	currpath += LOCALHOST;
 	currpath += "\\";
-	cout << "从主机" << currcomp << "断开连接" << endl;
+	cout << endl << "从主机" << currcomp << "断开连接" << endl << endl;
 	currcomp = LOCALHOST;
 	currcomptr = NULL;
 }
@@ -66,24 +68,24 @@ void connauth()
 {
 	if (currcomptr == NULL||currcomptr->ishacked)
 	{
-		cout << "您已是目标主机的管理员" << endl;
+		cout << "\n您已是目标主机的管理员\n" << endl;
 		return;
 	}
 	else
 	{
 		string user, passwd;
-		cout << "username: ";
+		cout << "\nusername: ";
 		cin >> user;
-		cout << "password: ";
+		cout << "\npassword: ";
 		cin >> passwd;
 		if (!(currcomptr->usr == user))
 		{
-			cout << "无此用户！" << endl;
+			cout << "\n无此用户！\n" << endl;
 			return;
 		}
 		else if (currcomptr->pwd == passwd)
 		{
-			cout << "您已是目标主机的管理员" << endl;
+			cout << "\n您已是目标主机的管理员\n" << endl;
 			currcomptr->ishacked = true;
 			logging(" gained root permission ");
 			cin.ignore(1, '\n');
@@ -102,7 +104,7 @@ void scp(string para)
 {
 	if (currcomp == "127.0.0.1")
 	{
-		cout << "请先连接至远程主机" << endl;
+		cout << "\n请先连接至远程主机\n" << endl;
 		return;
 	}
 	filesystem::path dest= workpath,src=currpath;
@@ -113,17 +115,17 @@ void scp(string para)
 	src += para;
 	if (!filesystem::exists(src))
 	{
-		cout << "目标文件不存在！" << endl;
+		cout << "\n目标文件不存在！\n" << endl;
 		return;
 	}
 	if (filesystem::exists(dest))
 	{
-		cout << "目标文件已下载" << endl;
+		cout << "\n目标文件已下载\n" << endl;
 		return;
 	}
 	cout << "从远程主机下载" << para;
 	ptr("......", 500);
-	//cout << "完成！" << endl;
+	cout << "完成！" << endl;
 	//cout << "SRC:" << src.generic_string() << endl << "DEST:" << dest.generic_string() << endl;
 	filesystem::copy_file(src, dest);
 	string loggs=" downloaded ";
@@ -135,7 +137,7 @@ void upload(string para)
 {
 	if (currcomp == "127.0.0.1")
 	{
-		cout << "请先连接至远程主机" << endl;
+		cout << "\n请先连接至远程主机\n" << endl;
 		return;
 	}
 	filesystem::path src=workpath, dest=currpath;

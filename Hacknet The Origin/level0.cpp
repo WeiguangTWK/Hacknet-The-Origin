@@ -9,8 +9,12 @@
 void mainstopmusic();
 void selfcheck();
 void level0_1();
-void level0()
+
+void level0()    //说明一下：在游戏设定中这个系统是运行在虚拟机上的
 {
+	system("cls");
+	ptr("作者附语：当你不知道下一步该如何做时探索精神非常重要，有时多运行一个\"help\"命令都会非常有用，记住——探索精神", 5);
+	system("pause");
 	system("cls");
 	ptr("创建一个新虚拟机前，某些设置需要您自行设定，别担心，我们会把别的事项处理妥当", 5);
 	Sleep(500);
@@ -34,6 +38,7 @@ void level0()
 	sav->level = 1;
 	save();
 }
+
 void selfcheck()
 {
 	system("cls");

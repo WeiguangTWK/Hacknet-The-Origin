@@ -1,3 +1,6 @@
+//命令行模拟以及迭代查询命令
+
+
 #include<iostream>
 #include<string>
 #include"cmds.h"

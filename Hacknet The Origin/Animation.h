@@ -7,3 +7,5 @@ void bootseq();
 void coutwithsleep(std::string str, int delay);
 void sysinit();
 void ircmassage(std::string sender, std::string message, int delay);
+void compileanim();
+void bootseqerr();

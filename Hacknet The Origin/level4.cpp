@@ -90,6 +90,7 @@ void level4()
 	system("cls");
 	system("COLOR 07");
 	ptr("注意：虚拟机意外关闭，请重启V-Mach\n\n", 5);
+	cout << "提示：游戏还没结束，你需要退出再进入一次游戏，剧情设定上是此时虚拟机连带着仿真程序一起崩溃了" << endl;
 	sav->level = 5;
 	save();
 
@@ -97,7 +98,7 @@ void level4()
 	exit(1);
 }
 
-void freqalert()
+void freqalert()  //警报声
 {
 	for (int i = 0; i < 7; i++)
 	{
