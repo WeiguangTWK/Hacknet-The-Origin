@@ -164,6 +164,7 @@ void sysinit()  //开完机后的系统初始化
     ptr("....", 500);
     ptr("完成！\n\n", 5);
     ptr("查看程序帮助，键入\"help\"\n", 5);
+    if (sav->terminaltype == "@HACKNET") ptr("键入\"hacknethelp\"查看hacknet渗透套件帮助\n", 5);
 };
 
 

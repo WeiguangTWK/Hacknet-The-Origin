@@ -51,8 +51,6 @@ void initplayercmdlv5()   //初始化玩家指令 （第5关专用）
 	addcmd2("shutdown", c2);
 	c2 = lv5help;
 	addcmd2("help", c2);
-	c2 = console;
-	addcmd2("console", c2);
 }
 
 void initplayercmdlv6()  //Hacknet出场！
@@ -66,4 +64,6 @@ void initplayercmdlv6()  //Hacknet出场！
 	addcmd2("porthack", c2);
 	c2 = hacknethelp;
 	addcmd2("hacknethelp", c2);
+	c2 = console;
+	addcmd2("console", c2);
 }

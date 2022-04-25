@@ -12,7 +12,8 @@ void clear();
 void save();
 void load();
 void dhcp();
-extern bool ifinited;
+extern bool ifinited;  //游戏是否刚刚启动
+extern bool istraced; //是否被追踪到
 extern savedata* sav; //存档数据
 extern std::filesystem::path currpath;  //当前路径
 extern std::filesystem::path currcomp;  //当前连接的电脑

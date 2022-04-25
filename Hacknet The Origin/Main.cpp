@@ -14,6 +14,7 @@ void ls();
 void mainmenu();
 void leveldec();
 bool ifinited = false;
+bool istraced = false;
 savedata *sav=new savedata;
 std::vector<pcinfo> pcs;
 std::vector<command1> cmd1s;
@@ -24,6 +25,7 @@ host* currcomptr = NULL;
 const std::filesystem::path workpath(std::filesystem::current_path());
 int main(int argc,char *argv[])
 {
+    SetConsoleTitle(TEXT("HACKNET The Origin ---关闭潘多拉的盒子---"));
     currpath = workpath;
     currpath += COMPUTERMAMP;
     currpath += currcomp;

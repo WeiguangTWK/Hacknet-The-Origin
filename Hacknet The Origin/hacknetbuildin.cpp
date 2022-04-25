@@ -50,7 +50,8 @@ void nmap()
 	if (currcomptr->status[6]) coutwithsleep("OpenSMTPd remote command execute vulnerability found!\n ", 800);
 	if (currcomptr->status[4]) coutwithsleep("Heartbleed Bug(CVE-2014-0160) found！\n", 800);
 	if (currcomptr->status[7]) coutwithsleep("SMB remote command execute vulnerability found!\n", 800);
-	cout << "运行porthack所需端口：" << currcomptr->hackport << endl << endl;
+	cout << endl << "运行porthack所需端口：" << currcomptr->hackport << endl << endl;
+	if (currcomptr->hackport == 0) cout << "该主机已经发现致命漏洞，可直接运行porthack" << endl;
 }
 
 void eternalblueexploit()

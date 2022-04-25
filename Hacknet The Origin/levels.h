@@ -10,3 +10,4 @@ void level3();
 void level4();
 void level5();
 void level6();
+void level7();

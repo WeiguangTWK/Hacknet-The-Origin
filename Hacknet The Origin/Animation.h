@@ -9,3 +9,5 @@ void sysinit();
 void ircmassage(std::string sender, std::string message, int delay);
 void compileanim();
 void bootseqerr();
+void vlptr(char c, int count);
+void inittraced();

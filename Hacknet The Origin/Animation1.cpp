@@ -10,6 +10,10 @@
 using namespace std;
 
 
+void vlptr(char c, int count) //批量输出
+{
+    for (int i = 0; i < count; i++) cout << c;
+}
 
 void ptr(string str,int delay)   //一个字一个字地输出
 {

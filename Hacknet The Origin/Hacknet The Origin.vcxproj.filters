@@ -16,9 +16,6 @@
     <Filter Include="源文件\关卡">
       <UniqueIdentifier>{e21593b4-c5d9-4aad-9613-f6e4c591a040}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\计算机类型">
-      <UniqueIdentifier>{e64ee1cb-ceaa-4a45-ac5e-2f1deb32695a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\命令处理">
       <UniqueIdentifier>{6a03d68c-1d5f-4748-945c-6b06a6a65fa2}</UniqueIdentifier>
     </Filter>
@@ -43,6 +40,15 @@
     <Filter Include="源文件\命令处理\骇入命令">
       <UniqueIdentifier>{c13aad7f-98ad-46b6-8fb9-589bf82b09d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\主机">
+      <UniqueIdentifier>{e64ee1cb-ceaa-4a45-ac5e-2f1deb32695a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\主机\各个主机以及事件">
+      <UniqueIdentifier>{e0094fb1-0cbd-403e-9428-07b21f22668b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\初始化\各关卡主机">
+      <UniqueIdentifier>{32bc44c5-9fb0-407f-81b6-c07fd94d27ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -52,7 +58,7 @@
       <Filter>源文件\关卡</Filter>
     </ClCompile>
     <ClCompile Include="host.cpp">
-      <Filter>源文件\计算机类型</Filter>
+      <Filter>源文件\主机</Filter>
     </ClCompile>
     <ClCompile Include="rwopt.cpp">
       <Filter>源文件</Filter>
@@ -73,9 +79,6 @@
       <Filter>源文件\命令处理\基础命令</Filter>
     </ClCompile>
     <ClCompile Include="initplayercmd.cpp">
-      <Filter>源文件\初始化</Filter>
-    </ClCompile>
-    <ClCompile Include="initcomp.cpp">
       <Filter>源文件\初始化</Filter>
     </ClCompile>
     <ClCompile Include="level0.cpp">
@@ -110,6 +113,21 @@
     </ClCompile>
     <ClCompile Include="hacknetbuildin.cpp">
       <Filter>源文件\命令处理\骇入命令</Filter>
+    </ClCompile>
+    <ClCompile Include="TracedAnimation.cpp">
+      <Filter>源文件\动画</Filter>
+    </ClCompile>
+    <ClCompile Include="68.144.93.18.cpp">
+      <Filter>源文件\主机\各个主机以及事件</Filter>
+    </ClCompile>
+    <ClCompile Include="Level3Comp.cpp">
+      <Filter>源文件\初始化\各关卡主机</Filter>
+    </ClCompile>
+    <ClCompile Include="Level6Comp.cpp">
+      <Filter>源文件\初始化\各关卡主机</Filter>
+    </ClCompile>
+    <ClCompile Include="level7.cpp">
+      <Filter>源文件\关卡\序章\教程关</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

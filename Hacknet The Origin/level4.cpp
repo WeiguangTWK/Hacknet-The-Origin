@@ -74,6 +74,10 @@ void level4()
 	coutwithsleep("you ", 250);
 	PlaySound(TEXT("beep.wav"), NULL, SND_ASYNC);
 	coutwithsleep("are\n", 250);
+	PlaySound(TEXT("beep.wav"), NULL, SND_ASYNC);
+	coutwithsleep("For ", 250);
+	PlaySound(TEXT("beep.wav"), NULL, SND_ASYNC);
+	coutwithsleep("EnSEC\n", 250);
 	cout << endl << endl;
 
 	thread i(freqalert);

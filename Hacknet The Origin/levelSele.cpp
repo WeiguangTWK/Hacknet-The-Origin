@@ -13,6 +13,7 @@ void leveldec()   //这里是进行关卡选择的地方，为了避免关卡套娃导致内存占用，我采
 	case 4: { level4(); break; };
 	case 5: { level5(); break; };
 	case 6: { level6(); break; };
+	case 7: { level7(); break; };
 	default:
 		break;
 	}
