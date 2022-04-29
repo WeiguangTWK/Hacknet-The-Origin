@@ -58,6 +58,7 @@ void save()
 
 void load()
 {
+	//std::cout << "load start" << std::endl;
 	std::ifstream file;
 	file.seekg(0);
 	file.open(SAVEFILE,std::ios::in|std::ios::binary);
@@ -99,6 +100,7 @@ void load()
 	}*/
 
 	file.close();
+	//std::cout << "load end" << std::endl;
 }
 
 void dhcp()    //Ä£ÄâDHCPµÄIP·ÖÅä

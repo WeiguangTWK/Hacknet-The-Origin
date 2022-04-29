@@ -46,10 +46,10 @@ void selfcheck()
 	ptr("...", 300);
 	std::cout << "完成！" << std::endl;
 	ptr("正在使用默认配置创建虚拟机...\n", 5);
-	ptr("硬盘......SATA 0: ", 5);
+	ptr("硬盘......IDE 0: ", 5);
 	counter(0, 30, 50);
 	ptr("GBytes 完成！\n", 5);
-	ptr("内存......DDR4 ch1: ", 5);
+	ptr("内存......DDR3 ch1: ", 5);
 	counter(0, 2, 1000);
 	ptr("GBytes 完成！\n", 5);
 	ptr("CPU......\n", 5);

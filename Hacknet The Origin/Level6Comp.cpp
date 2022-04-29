@@ -38,6 +38,7 @@ void ipmanaconsole()
 		cout << "正在扫描" << userinp << endl;
 		ptr("====================", 100);
 		cout << "完成" << endl;
+		//cout << "INPUT:" << userinp << endl << "playerip" << playerip << endl;
 		if (userinp == playerip)
 		{
 			ptr("对于该地址可选操作：\n\n\t dhcp 重新分配IP地址\n\n\t exit 返回上级菜单\n\t 执行其他操作需要登录上级路由 \n\n", 5);

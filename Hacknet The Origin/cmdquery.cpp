@@ -12,16 +12,19 @@ void mainconsole(bool jumprequired,string jumpcmd="none")
 {
 	string cmd;
 	string parameter;
-	string path;
-	string workp; 
+	string path,workp,compm;
 	//int begin;
 	while (true)
 	{
 		path = currpath.generic_string();
 		workp = workpath.generic_string();
-		path.erase(0, sizeof(workp)+sizeof("Origin/Hacknet The Origin/computermap"));
+		compm = COMPUTERMAMP;
+		//cout << "path:" << path << endl << "workp:" << workp<<endl;
+		path.erase(0, workp.length() + compm.length());
 		//cout << currpath.generic_string() << endl << workpath.generic_string() << endl;
 		//begin = path.find(workpath.generic_string());
+		//cout << "精简前:" << currpath << endl;
+		//cout << "精简后" << path << endl;
 		cout << sav->name << sav->terminaltype << " " << path << ">";
 		getline(cin, cmd);
 		if (!cmdquery(cmd))cout << "命令无效——检查语法" << endl;

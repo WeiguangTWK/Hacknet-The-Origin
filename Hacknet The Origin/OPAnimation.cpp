@@ -56,7 +56,7 @@ void trailerframe01()
     system("cls");
     cout << "\n\n\n\n\n\n\n\n\n\n\n";
     cout << "                  ";
-    ptr("策划：@棱镜Master&@微光TWK", 5);
+    ptr("策划：@凌镜Master&@微光TWK", 5);
 }
 
 
@@ -197,7 +197,7 @@ void trailerframe09()
         << "_  /    _  / / //  __/     / /_/ / _  /    _  /  _  /_/ / _  /  _  / / / \n"
         << "/_/     /_/ /_/ \\___/      \\____/  /_/     /_/   _\\__, /  /_/   /_/ /_/ \n"
         << "                                                 /____/";
-    cout << "———————————————关闭潘多拉的魔盒———————————————" << endl;
+    cout << "\n\n———————————————关闭潘多拉的魔盒———————————————" << endl;
     cout << endl << endl << "黑客网络：起源  By WeiguangTWK\n\n\n";
     cout << "你能阻止混乱的蔓延吗？"<<endl<<endl<<endl;
 

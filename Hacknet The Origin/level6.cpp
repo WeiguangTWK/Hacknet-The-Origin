@@ -9,7 +9,7 @@ using namespace std;
 
 void level6()
 {
-	if (!ifinited)cin.ignore(1, '\n');
+	if (!ifinited) system("cls");
 	ifinited = true;
 	cmd1s.clear();
 	cmd2s.clear();

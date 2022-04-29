@@ -188,7 +188,7 @@ string chartostr(const unsigned char* ip,int count)
 		g = (int)ip[i] - (int)ip[i] / 10 * 10;
 		s = (int)ip[i] - b * 100 - g;
 		s /= 10;
-		res += (char)(b + 48);
+		if (b != 0)res += (char)(b + 48);
 		res += (char)(s + 48);
 		res += (char)(g + 48);
 		if (i < count - 1) res += ".";

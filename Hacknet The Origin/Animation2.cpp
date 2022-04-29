@@ -33,7 +33,7 @@ void mainmenu()  //主菜单
         cout << "已有用户：" << sav->name << "  " << "章节：" << sav->chapter << endl;
         printf("IP: %d.%d.%d.%d\n", sav->ip[0], sav->ip[1], sav->ip[2], sav->ip[3]);
     }
-    
+    return;
 }
 
 void bootseq()   //开机动画
