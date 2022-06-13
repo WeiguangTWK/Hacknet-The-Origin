@@ -227,7 +227,6 @@
     <ClCompile Include="filegeneral.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Animation1.cpp" />
-    <ClCompile Include="processcomm.cpp" />
     <ClCompile Include="rwopt.cpp" />
     <ClCompile Include="level0.cpp" />
     <ClCompile Include="cmdquery.cpp" />
