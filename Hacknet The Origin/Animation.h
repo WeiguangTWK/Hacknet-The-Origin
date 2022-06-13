@@ -1,4 +1,3 @@
-//这里是存放动画函数定义的地方
 #pragma once
 #include<string>
 void ptr(std::string str, int delay);

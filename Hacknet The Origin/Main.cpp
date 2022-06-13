@@ -33,7 +33,7 @@ int main(int argc,char *argv[])
     //cout << currpath << endl<<endl;
     string opt;
     load();
-    cout << "本作品与《黑客网络》同世界观，涉及人物时间皆为虚构" << endl << endl;
+    cout << "本作品与《黑客网络》同世界观，涉及人物时间皆为虚构" << endl << endl;;
     cout << "打开声音体验更佳" << endl;
     Sleep(3000);
     system("cls");
@@ -66,7 +66,7 @@ int main(int argc,char *argv[])
     }
     while (true)
     {
-         
+        leveldec();
     }
 }
 
