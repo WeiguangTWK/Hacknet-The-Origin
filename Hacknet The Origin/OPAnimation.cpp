@@ -8,7 +8,6 @@
 using namespace std;
 
 
-
 void trailerframe01();
 void trailerframe02();
 void trailerframe03();
@@ -18,8 +17,6 @@ void trailerframe06();
 void trailerframe07();
 void trailerframe08();
 void trailerframe09();
-
-
 void openinganim()
 {
     trailerframe01();
