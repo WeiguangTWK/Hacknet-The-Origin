@@ -49,6 +49,9 @@
     <Filter Include="源文件\初始化\各关卡主机">
       <UniqueIdentifier>{32bc44c5-9fb0-407f-81b6-c07fd94d27ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\关卡\第一章">
+      <UniqueIdentifier>{dea21425-22a9-4862-9818-ae01bfe98f2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -128,6 +131,9 @@
     </ClCompile>
     <ClCompile Include="level7.cpp">
       <Filter>源文件\关卡\序章\教程关</Filter>
+    </ClCompile>
+    <ClCompile Include="processcomm.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
